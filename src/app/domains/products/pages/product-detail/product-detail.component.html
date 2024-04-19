@@ -11,12 +11,8 @@
         <div class="grid grid-cols-3 gap-1">
           <img
             alt="ecommerce"
-            class="object-cover object-center rounded border-2 border-gray-200"
-            *ngFor="let image of product()?.images"
-            [src]="image"
-            [class.border-blue-800] = "image == cover()"
-            (click) = "changeCover(image)"
-          />
+            class="object-cover object-center rounded border-2"
+            *ngFor="let img of product()?.images" [src]="img" (click) = "changeCover(img)" [class.border-blue-800]= "img === cover()"/>
         </div>
       </div>
     </div>

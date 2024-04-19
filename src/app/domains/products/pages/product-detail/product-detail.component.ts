@@ -15,7 +15,7 @@ export class ProductDetailComponent {
 
   @Input() id?: string;
   product = signal<Product | null>(null);
-  cover = signal('');
+  cover = signal("");
 
   private productService = inject(ProductService);
   private cartService = inject(CartService);
