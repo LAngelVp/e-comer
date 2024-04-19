@@ -94,10 +94,10 @@
       {{product.title}}
     </p>
     <p class="text-center font-sans">
-      {{product.price}}
+      {{product.price | currency:"$": "symbol":"1.2"}}
     </p>
   </div>
   <div class="mt-2">
-    <p class="font-bold text-center bg-blue-300 border rounded">Total: {{total()}}</p>
+    <p class="font-bold text-center bg-blue-300 border rounded">Total: {{total()  | currency:"$": "symbol":"1.2"}}</p>
   </div>
 </div>
